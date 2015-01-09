@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.SettingsWatch" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionModeCutDrawable">@drawable/content_cut_dark</item>
+        <item name="android:actionModeCopyDrawable">@drawable/content_copy_dark</item>
+        <item name="android:actionModePasteDrawable">@drawable/content_paste_dark</item>
+    </style>
+    <style name="Widget.ActionBar.SettingsWatch" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">#555555</item>
+    </style>
+</resources>

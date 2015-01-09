@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Settings Watch</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Settings Watch</string>
+    <string name="dialog_edit_value_positive">Save</string>
+    <string name="dialog_edit_value_neutral">Restore</string>
+    <string name="dialog_edit_value_neutral2">Store</string>
+    <string name="dialog_edit_value_negative">Cancel</string>
+    <string name="dialog_no_ads_neutral">Thanks</string><string name="dialog_no_ads_message">Seems that You use this App quite a lot. Hope You\'ll like it even more without ads!</string><string name="dialog_edit_title">Edit</string>
+    <string name="tab_system">System</string>
+    <string name="tab_secure">Secure</string>
+    <string name="toast_value_wasnt_found">Value wasn\'t found</string>
+    <string name="list_empty_settings">No values were found</string><string name="menu_backup">Backup</string>
+    
+    <string name="menu_difference">Show difference</string>
+    <string name="title_activity_difference">Difference</string>
+    <string name="no_value">N/A</string>
+    <string name="no_differences">No differences</string>
+    <string name="current">Current</string>
+    <string name="previous">Previous</string>
+    <string name="no_stored_values">No stored values</string>
+    <string name="menu_timetravel">Time travel</string>
+    <string name="menu_delete_all">Delete all</string>
+    <string name="dialog_disclaimer_title">Disclaimer</string>
+    <string name="dialog_disclaimer_message">Please be careful, now You\'re on your one.</string>
+    <string name="dialog_disclaimer_positive">OK, I will!</string>
+    <string name="dialog_no_ads_title">Cheers</string>
+    
+    
+
+</resources>

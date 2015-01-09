@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Settings Watch</string>
+    <string name="title_section1">System</string>
+    <string name="title_section2">Secure</string>
+    <string name="title_section3">Global</string>
+    <string name="action_save">Take snapshot</string>
+    <string name="action_only_changes">Show only changes</string>
+    <string name="action_filter">Filter</string>
+    <string name="empty_list">No entries</string>
+    <string name="dialog_cancel">Close</string>
+
+</resources>

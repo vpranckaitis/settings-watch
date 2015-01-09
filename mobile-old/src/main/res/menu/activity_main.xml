@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_difference" android:title="@string/menu_difference" android:icon="@drawable/content_split" android:showAsAction="ifRoom" android:orderInCategory="2"></item>
+    <item android:id="@+id/menu_settings" android:title="@string/menu_settings" android:orderInCategory="100" android:showAsAction="never" android:visible="false"/>
+	<item android:id="@+id/menu_timetravel" android:title="@string/menu_timetravel" android:visible="false"></item>
+    
+</menu>
