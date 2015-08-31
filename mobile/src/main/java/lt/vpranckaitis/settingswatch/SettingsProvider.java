@@ -251,11 +251,13 @@ public class SettingsProvider extends ContentProvider {
             SQLiteStatement statement = db.compileStatement(sql);
             db.beginTransaction();
             for (int i = 0; i < values.length; i++) {
-                statement.clearBindings();
-                statement.bindString(1, values[i].getAsString(NameValueTable._ID));
-                statement.bindString(2, values[i].getAsString(NameValueTable.NAME));
-                statement.bindString(3, values[i].getAsString(NameValueTable.VALUE));
-                statement.execute();
+                if (values[i].getAsString(NameValueTable.VALUE) != null) {
+                    statement.clearBindings();
+                    statement.bindString(1, values[i].getAsString(NameValueTable._ID));
+                    statement.bindString(2, values[i].getAsString(NameValueTable.NAME));
+                    statement.bindString(3, values[i].getAsString(NameValueTable.VALUE));
+                    statement.execute();
+                }
             }
             db.setTransactionSuccessful();
             db.endTransaction();
