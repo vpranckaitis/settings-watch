@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
 
     defaultConfig {
         applicationId "lt.vpranckaitis.settingswatch"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 17
     }
 
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:24.2.1'
     compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
 }
