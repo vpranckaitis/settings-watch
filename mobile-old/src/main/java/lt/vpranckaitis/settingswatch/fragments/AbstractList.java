@@ -9,9 +9,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.ListAdapter;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 import lt.vpranckaitis.settingswatch.ApplicationConstants;
 
@@ -51,13 +51,14 @@ public class AbstractList extends ListFragment {
 	    }
 	    if (mAdView[mOrient + mAdOffset] == null) {
 		Log.d(TAG, "null");
-		mAdView[mOrient + mAdOffset] = new AdView(getActivity(),
-			AdSize.SMART_BANNER, "a151aa291e82461");
-		AdRequest ar = new AdRequest();
-		ar.addKeyword("android");
-		ar.addKeyword("settings");
+		mAdView[mOrient + mAdOffset] = new AdView(getActivity());
+		mAdView[mOrient + mAdOffset].setAdSize(AdSize.SMART_BANNER);
+		mAdView[mOrient + mAdOffset].setAdUnitId("a151aa291e82461");
+		AdRequest ar = new AdRequest.Builder()
+				.addKeyword("android")
+				.addKeyword("settings")
+				.build();
 		mAdView[mOrient + mAdOffset].loadAd(ar);
-		mAdView[mOrient + mAdOffset].setGravity(Gravity.BOTTOM);
 	    }
 
 	    if (getListAdapter() != null) {
